@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Client Order Form & Agreement — Thread&Co.</title>
+<title>Client Order Form &amp; Agreement — Thread&amp;Co.</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="page" id="formPage">
+
+  <!-- HEADER -->
   <div class="header">
     <div>
-      <div class="brand">Thread<span>&</span>Co.</div>
+      <div class="brand">Thread<span>&amp;</span>Co.</div>
       <div class="brand-sub">Custom Merch · Print on Demand</div>
+      <div class="contact-info">✉ riteshbhakta56@gmail.com &nbsp;·&nbsp; 📷 @ritesh_5673</div>
     </div>
     <div class="doc-meta">
       <div><strong>Order Form &amp; Agreement</strong></div>
@@ -21,7 +24,8 @@
     </div>
   </div>
 
-  <h3 class="section-title">Client Details</h3>
+  <!-- CLIENT DETAILS -->
+  <div class="section-title">Client Details</div>
   <div class="grid-2">
     <div class="field">
       <label>Full Name *</label>
@@ -54,6 +58,7 @@
     </div>
   </div>
 
+  <!-- ORDER DETAILS -->
   <div class="section-title">Order Details</div>
   <div class="grid-3">
     <div class="field">
@@ -75,7 +80,6 @@
       <div class="field-error" id="err-deadline"></div>
       <div class="static-val" id="sv-deadline"></div>
     </div>
-
     <div class="field">
       <label>Product Type *</label>
       <select id="productType" required>
@@ -90,7 +94,6 @@
       <div class="field-error" id="err-productType"></div>
       <div class="static-val" id="sv-productType"></div>
     </div>
-
     <div class="field">
       <label>Fabric Preference</label>
       <select id="fabric">
@@ -102,14 +105,12 @@
       </select>
       <div class="static-val" id="sv-fabric"></div>
     </div>
-
     <div class="field span-2">
       <label>Design Brief *</label>
       <textarea id="brief" placeholder="Colors, text to include, mood/vibe, reference images..." required></textarea>
       <div class="field-error" id="err-brief"></div>
       <div class="static-val tall" id="sv-brief"></div>
     </div>
-
     <div class="field">
       <label>Existing Logo?</label>
       <select id="logoStatus">
@@ -120,22 +121,27 @@
       </select>
       <div class="static-val" id="sv-logoStatus"></div>
     </div>
-
   </div>
 
-  <!-- Printing options: print method, colours, sizes — injected by script.js -->
+  <!-- PRINTING OPTIONS — injected by script.js into #printingSection -->
   <div class="section-title">Printing Options</div>
   <div class="grid-3" id="printingSection"></div>
 
+  <!-- TERMS & CONDITIONS -->
   <div class="section-title">Terms &amp; Conditions</div>
+  <p class="terms-summary">Please read carefully. By ticking the box below, you confirm you have understood and agreed to all of the following.</p>
   <div class="terms-box">
-    <div class="term"><div class="term-num">1</div><div class="term-text"><strong>50% Upfront Payment:</strong> A deposit of 50% of the total order amount is required before any design work begins. No design will be started without this payment.</div></div>
-    <div class="term"><div class="term-num">2</div><div class="term-text"><strong>Design Approval:</strong> After the design is ready, the client will receive a mockup for approval. The order proceeds only after written confirmation (WhatsApp/email is fine).</div></div>
-    <div class="term"><div class="term-num">3</div><div class="term-text"><strong>Full Payment Before Shipping:</strong> The remaining 50% plus shipping charges must be paid in full before the order is placed and dispatched.</div></div>
-    <div class="term"><div class="term-num">4</div><div class="term-text"><strong>Revisions:</strong> 2 design revisions are included at no extra charge. Each additional revision beyond that will be charged at Rs. 200.</div></div>
-    <div class="term"><div class="term-num">5</div><div class="term-text"><strong>No Refunds After Dispatch:</strong> Once the order has been placed with the printer and dispatched, we are unable to offer refunds. Please confirm all details carefully before approving the design.</div></div>
-    <div class="term"><div class="term-num">6</div><div class="term-text"><strong>Delivery Timeline:</strong> Standard delivery is 7-10 business days after full payment is received. Rush orders (under 5 days) carry an additional 20% charge.</div></div>
-    <div class="term"><div class="term-num">7</div><div class="term-text"><strong>Minimum Order:</strong> We accept a minimum of 15 shirts per order. Orders below this cannot be processed.</div></div>
+    <div class="term"><div class="term-num">1</div><div class="term-text"><strong>50% Deposit Required First.</strong> We do not begin any design work without an upfront deposit of 50% of the total order value. This deposit is <strong>non-refundable</strong> once work has started — regardless of whether the final order is placed.</div></div>
+    <div class="term"><div class="term-num">2</div><div class="term-text"><strong>Full Payment Before We Ship.</strong> The remaining 50% plus all shipping charges must be paid in full before we place the order with our printing partner. No payment = no order placed.</div></div>
+    <div class="term"><div class="term-num">3</div><div class="term-text"><strong>Design Approval is Binding.</strong> Once you reply with "approved" (or any clear written confirmation via WhatsApp or email), the design is locked. We are not liable for errors you approved. Vague or ambiguous replies do not count as approval.</div></div>
+    <div class="term"><div class="term-num">4</div><div class="term-text"><strong>No Refunds After Dispatch.</strong> Once an order is placed with the printer and dispatched, it cannot be cancelled or refunded under any circumstances. Verify all details before approving.</div></div>
+    <div class="term"><div class="term-num">5</div><div class="term-text"><strong>2 Free Revisions. After That, Rs. 200 Each.</strong> Two rounds of design changes are included at no extra cost. Every revision beyond that is charged at Rs. 200 per round, billed before work continues.</div></div>
+    <div class="term"><div class="term-num">6</div><div class="term-text"><strong>Delivery Is Estimated, Not Guaranteed.</strong> Standard delivery is 7–10 business days from dispatch. Thread&amp;Co. is not responsible for delays by the printing platform or courier. We will keep you updated but cannot control third-party timelines.</div></div>
+    <div class="term"><div class="term-num">7</div><div class="term-text"><strong>Colours Will Not Be 100% Identical to Screen.</strong> All printing processes produce slight colour variance from digital previews. This is industry-standard and not a defect. We are not liable for minor colour differences between mockup and final print.</div></div>
+    <div class="term"><div class="term-num">8</div><div class="term-text"><strong>Quantity and Sizes Are Final Once Submitted.</strong> The details in this form are what we order. Changes after submission may not be possible. Incorrect sizes chosen by the client are not our responsibility — no replacements will be issued.</div></div>
+    <div class="term"><div class="term-num">9</div><div class="term-text"><strong>You Are Responsible for the Files You Send Us.</strong> If you provide a logo or artwork, it must be high resolution (minimum 300 DPI). Poor print quality caused by low-resolution files provided by you is not our liability.</div></div>
+    <div class="term"><div class="term-num">10</div><div class="term-text"><strong>Designs We Create Belong to Us Until Fully Paid.</strong> All original artwork made by Thread&amp;Co. remains our intellectual property until the full order amount is received. After full payment, you may use the design for this order only. You may not resell, redistribute, or reprint without our written permission.</div></div>
+    <div class="term"><div class="term-num">11</div><div class="term-text"><strong>Minimum Order is 15 Shirts.</strong> We do not accept orders below 15 pieces. Submitting this form with fewer than 15 shirts will result in the order being rejected.</div></div>
   </div>
 
   <label class="agree-row">
@@ -148,11 +154,13 @@
     <span>Thread&amp;Co. · Custom Merch &amp; Print on Demand</span>
     <span>All prices in INR · Payments via UPI</span>
   </div>
-</div>
+
+</div><!-- end .page -->
 
 <!-- BANNERS -->
 <div class="banner banner-error"   id="errorBanner">Please fill all required fields (*) before continuing.</div>
 <div class="banner banner-success" id="successBanner">Form submitted. PDF downloaded.</div>
+
 <!-- ACTION ZONE -->
 <div class="action-zone">
   <button class="btn-submit" id="submitBtn" onclick="handleSubmit()" disabled>
@@ -160,9 +168,10 @@
     Download PDF
   </button>
   <p class="action-helper">
-  This will <strong>download your info as a PDF</strong>. Please send it to us via email.
-</p>
+    This will <strong>download your info as a PDF</strong>. Please send it to us via email.
+  </p>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
